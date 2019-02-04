@@ -23,5 +23,10 @@ namespace ServidorPetSpa
             return new DadosBuscaCEP().ConsultarCEP(CEP);
         }
 
+        public void InserirPaciente(Paciente pFiltro)
+        {
+            new DadosPaciente().InserirPaciente(pFiltro);
+        }
+
     }
 }

@@ -151,9 +151,10 @@
             this.bt_Confirmar.Name = "bt_Confirmar";
             this.bt_Confirmar.Primary = true;
             this.bt_Confirmar.Size = new System.Drawing.Size(99, 36);
-            this.bt_Confirmar.TabIndex = 24;
+            this.bt_Confirmar.TabIndex = 10;
             this.bt_Confirmar.Text = "Confirmar";
             this.bt_Confirmar.UseVisualStyleBackColor = true;
+            this.bt_Confirmar.Click += new System.EventHandler(this.Bt_Confirmar_Click);
             // 
             // materialLabel10
             // 
@@ -173,7 +174,7 @@
             this.txtComplemento.Depth = 0;
             this.txtComplemento.Hint = "";
             this.txtComplemento.Location = new System.Drawing.Point(0, 302);
-            this.txtComplemento.MaxLength = 32767;
+            this.txtComplemento.MaxLength = 100;
             this.txtComplemento.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.PasswordChar = '\0';
@@ -181,7 +182,7 @@
             this.txtComplemento.SelectionLength = 0;
             this.txtComplemento.SelectionStart = 0;
             this.txtComplemento.Size = new System.Drawing.Size(913, 23);
-            this.txtComplemento.TabIndex = 22;
+            this.txtComplemento.TabIndex = 9;
             this.txtComplemento.TabStop = false;
             this.txtComplemento.UseSystemPasswordChar = false;
             // 
@@ -201,9 +202,10 @@
             // txt_Bairro
             // 
             this.txt_Bairro.Depth = 0;
+            this.txt_Bairro.Enabled = false;
             this.txt_Bairro.Hint = "";
             this.txt_Bairro.Location = new System.Drawing.Point(318, 360);
-            this.txt_Bairro.MaxLength = 32767;
+            this.txt_Bairro.MaxLength = 100;
             this.txt_Bairro.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Bairro.Name = "txt_Bairro";
             this.txt_Bairro.PasswordChar = '\0';
@@ -211,16 +213,17 @@
             this.txt_Bairro.SelectionLength = 0;
             this.txt_Bairro.SelectionStart = 0;
             this.txt_Bairro.Size = new System.Drawing.Size(221, 23);
-            this.txt_Bairro.TabIndex = 20;
+            this.txt_Bairro.TabIndex = 0;
             this.txt_Bairro.TabStop = false;
             this.txt_Bairro.UseSystemPasswordChar = false;
             // 
             // txt_Cidade
             // 
             this.txt_Cidade.Depth = 0;
+            this.txt_Cidade.Enabled = false;
             this.txt_Cidade.Hint = "";
             this.txt_Cidade.Location = new System.Drawing.Point(85, 360);
-            this.txt_Cidade.MaxLength = 32767;
+            this.txt_Cidade.MaxLength = 100;
             this.txt_Cidade.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Cidade.Name = "txt_Cidade";
             this.txt_Cidade.PasswordChar = '\0';
@@ -228,7 +231,7 @@
             this.txt_Cidade.SelectionLength = 0;
             this.txt_Cidade.SelectionStart = 0;
             this.txt_Cidade.Size = new System.Drawing.Size(218, 23);
-            this.txt_Cidade.TabIndex = 19;
+            this.txt_Cidade.TabIndex = 0;
             this.txt_Cidade.TabStop = false;
             this.txt_Cidade.UseSystemPasswordChar = false;
             // 
@@ -238,7 +241,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(81, 338);
+            this.materialLabel8.Location = new System.Drawing.Point(80, 338);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(55, 19);
@@ -261,9 +264,10 @@
             // txt_Estado
             // 
             this.txt_Estado.Depth = 0;
+            this.txt_Estado.Enabled = false;
             this.txt_Estado.Hint = "";
             this.txt_Estado.Location = new System.Drawing.Point(0, 360);
-            this.txt_Estado.MaxLength = 32767;
+            this.txt_Estado.MaxLength = 2;
             this.txt_Estado.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Estado.Name = "txt_Estado";
             this.txt_Estado.PasswordChar = '\0';
@@ -271,7 +275,7 @@
             this.txt_Estado.SelectionLength = 0;
             this.txt_Estado.SelectionStart = 0;
             this.txt_Estado.Size = new System.Drawing.Size(75, 23);
-            this.txt_Estado.TabIndex = 16;
+            this.txt_Estado.TabIndex = 0;
             this.txt_Estado.TabStop = false;
             this.txt_Estado.UseSystemPasswordChar = false;
             // 
@@ -287,14 +291,14 @@
             this.rb_feminino.Name = "rb_feminino";
             this.rb_feminino.Ripple = true;
             this.rb_feminino.Size = new System.Drawing.Size(86, 30);
-            this.rb_feminino.TabIndex = 15;
-            this.rb_feminino.TabStop = true;
+            this.rb_feminino.TabIndex = 6;
             this.rb_feminino.Text = "Feminino";
             this.rb_feminino.UseVisualStyleBackColor = true;
             // 
             // rb_masculino
             // 
             this.rb_masculino.AutoSize = true;
+            this.rb_masculino.Checked = true;
             this.rb_masculino.Depth = 0;
             this.rb_masculino.Font = new System.Drawing.Font("Roboto", 10F);
             this.rb_masculino.Location = new System.Drawing.Point(0, 69);
@@ -304,7 +308,7 @@
             this.rb_masculino.Name = "rb_masculino";
             this.rb_masculino.Ripple = true;
             this.rb_masculino.Size = new System.Drawing.Size(93, 30);
-            this.rb_masculino.TabIndex = 14;
+            this.rb_masculino.TabIndex = 5;
             this.rb_masculino.TabStop = true;
             this.rb_masculino.Text = "Masculino";
             this.rb_masculino.UseVisualStyleBackColor = true;
@@ -315,7 +319,7 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(-1, 213);
+            this.materialLabel6.Location = new System.Drawing.Point(-4, 213);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(86, 19);
@@ -325,9 +329,11 @@
             // txt_Logradouro
             // 
             this.txt_Logradouro.Depth = 0;
+            this.txt_Logradouro.Enabled = false;
             this.txt_Logradouro.Hint = "";
+            this.txt_Logradouro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txt_Logradouro.Location = new System.Drawing.Point(0, 235);
-            this.txt_Logradouro.MaxLength = 32767;
+            this.txt_Logradouro.MaxLength = 200;
             this.txt_Logradouro.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Logradouro.Name = "txt_Logradouro";
             this.txt_Logradouro.PasswordChar = '\0';
@@ -335,7 +341,7 @@
             this.txt_Logradouro.SelectionLength = 0;
             this.txt_Logradouro.SelectionStart = 0;
             this.txt_Logradouro.Size = new System.Drawing.Size(819, 23);
-            this.txt_Logradouro.TabIndex = 12;
+            this.txt_Logradouro.TabIndex = 0;
             this.txt_Logradouro.TabStop = false;
             this.txt_Logradouro.UseSystemPasswordChar = false;
             // 
@@ -357,7 +363,7 @@
             this.txtNumero.Depth = 0;
             this.txtNumero.Hint = "";
             this.txtNumero.Location = new System.Drawing.Point(838, 235);
-            this.txtNumero.MaxLength = 32767;
+            this.txtNumero.MaxLength = 4;
             this.txtNumero.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.PasswordChar = '\0';
@@ -365,7 +371,7 @@
             this.txtNumero.SelectionLength = 0;
             this.txtNumero.SelectionStart = 0;
             this.txtNumero.Size = new System.Drawing.Size(75, 23);
-            this.txtNumero.TabIndex = 10;
+            this.txtNumero.TabIndex = 8;
             this.txtNumero.TabStop = false;
             this.txtNumero.UseSystemPasswordChar = false;
             // 
@@ -374,7 +380,7 @@
             this.txtTelefone.Depth = 0;
             this.txtTelefone.Hint = "";
             this.txtTelefone.Location = new System.Drawing.Point(607, 34);
-            this.txtTelefone.MaxLength = 32767;
+            this.txtTelefone.MaxLength = 16;
             this.txtTelefone.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.PasswordChar = '\0';
@@ -382,9 +388,11 @@
             this.txtTelefone.SelectionLength = 0;
             this.txtTelefone.SelectionStart = 0;
             this.txtTelefone.Size = new System.Drawing.Size(148, 23);
-            this.txtTelefone.TabIndex = 9;
+            this.txtTelefone.TabIndex = 3;
             this.txtTelefone.TabStop = false;
             this.txtTelefone.UseSystemPasswordChar = false;
+            this.txtTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefone_KeyPress);
+            this.txtTelefone.Leave += new System.EventHandler(this.TxtTelefone_Leave);
             // 
             // materialLabel4
             // 
@@ -395,9 +403,9 @@
             this.materialLabel4.Location = new System.Drawing.Point(603, 12);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(68, 19);
+            this.materialLabel4.Size = new System.Drawing.Size(74, 19);
             this.materialLabel4.TabIndex = 8;
-            this.materialLabel4.Text = "Telefone";
+            this.materialLabel4.Text = "Telefone*";
             // 
             // materialLabel3
             // 
@@ -405,7 +413,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(-1, 156);
+            this.materialLabel3.Location = new System.Drawing.Point(-4, 156);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(37, 19);
@@ -417,7 +425,7 @@
             this.txtCEP.Depth = 0;
             this.txtCEP.Hint = "";
             this.txtCEP.Location = new System.Drawing.Point(0, 178);
-            this.txtCEP.MaxLength = 32767;
+            this.txtCEP.MaxLength = 10;
             this.txtCEP.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.PasswordChar = '\0';
@@ -425,10 +433,12 @@
             this.txtCEP.SelectionLength = 0;
             this.txtCEP.SelectionStart = 0;
             this.txtCEP.Size = new System.Drawing.Size(135, 23);
-            this.txtCEP.TabIndex = 6;
+            this.txtCEP.TabIndex = 7;
             this.txtCEP.TabStop = false;
             this.txtCEP.UseSystemPasswordChar = false;
-            this.txtCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCEP_KeyDown);
+            this.txtCEP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCEP_KeyDown);
+            this.txtCEP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCEP_KeyPress);
+            this.txtCEP.Leave += new System.EventHandler(this.TxtCEP_Leave);
             // 
             // materialLabel2
             // 
@@ -439,9 +449,9 @@
             this.materialLabel2.Location = new System.Drawing.Point(770, 12);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(143, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(149, 19);
             this.materialLabel2.TabIndex = 5;
-            this.materialLabel2.Text = "Data de nascimento";
+            this.materialLabel2.Text = "Data de nascimento*";
             // 
             // dataNascimento
             // 
@@ -461,16 +471,16 @@
             this.materialLabel1.Location = new System.Drawing.Point(433, 12);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(36, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(42, 19);
             this.materialLabel1.TabIndex = 3;
-            this.materialLabel1.Text = "CPF";
+            this.materialLabel1.Text = "CPF*";
             // 
             // txtCpf
             // 
             this.txtCpf.Depth = 0;
             this.txtCpf.Hint = "";
             this.txtCpf.Location = new System.Drawing.Point(437, 34);
-            this.txtCpf.MaxLength = 32767;
+            this.txtCpf.MaxLength = 14;
             this.txtCpf.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.PasswordChar = '\0';
@@ -481,6 +491,8 @@
             this.txtCpf.TabIndex = 2;
             this.txtCpf.TabStop = false;
             this.txtCpf.UseSystemPasswordChar = false;
+            this.txtCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCpf_KeyPress);
+            this.txtCpf.Leave += new System.EventHandler(this.TxtCpf_Leave);
             // 
             // lb_nome_paciente
             // 
@@ -491,16 +503,16 @@
             this.lb_nome_paciente.Location = new System.Drawing.Point(-1, 12);
             this.lb_nome_paciente.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_nome_paciente.Name = "lb_nome_paciente";
-            this.lb_nome_paciente.Size = new System.Drawing.Size(50, 19);
+            this.lb_nome_paciente.Size = new System.Drawing.Size(56, 19);
             this.lb_nome_paciente.TabIndex = 1;
-            this.lb_nome_paciente.Text = "Nome";
+            this.lb_nome_paciente.Text = "Nome*";
             // 
             // txtNomePaciente
             // 
             this.txtNomePaciente.Depth = 0;
             this.txtNomePaciente.Hint = "";
             this.txtNomePaciente.Location = new System.Drawing.Point(3, 34);
-            this.txtNomePaciente.MaxLength = 32767;
+            this.txtNomePaciente.MaxLength = 100;
             this.txtNomePaciente.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtNomePaciente.Name = "txtNomePaciente";
             this.txtNomePaciente.PasswordChar = '\0';

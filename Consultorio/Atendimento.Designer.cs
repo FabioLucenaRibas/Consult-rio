@@ -34,18 +34,17 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.bt_pesquisar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.label2 = new System.Windows.Forms.Label();
             this.bt_limpar = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButtonCPF = new MaterialSkin.Controls.MaterialRadioButton();
-            this.radioButtonRG = new MaterialSkin.Controls.MaterialRadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tb_Nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_RG_CPF = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tb_CPF = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.dataFim = new System.Windows.Forms.DateTimePicker();
             this.dataInicio = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.AtendimentoGridDataConsulta = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AtendimentoGridNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AtendimentoGridCPF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.AtendimentoGridRG = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AtendimentoGridTelefone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AtendimentoGridDataNascimento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AtendimentoGridTratamnto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -89,21 +87,23 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CEP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Logradouro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Numero = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Complemento = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Estado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Cidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Bairro = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CEP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnsSaldoDebito = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtCPF_Paciente_Search = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txt_Search = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txt_Nome_Paciente_Search = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.bt_Cadastro_Paciente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -171,18 +171,17 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.materialLabel5);
             this.groupBox2.Controls.Add(this.bt_pesquisar);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.bt_limpar);
             this.groupBox2.Controls.Add(this.materialLabel3);
             this.groupBox2.Controls.Add(this.materialLabel2);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.radioButtonCPF);
-            this.groupBox2.Controls.Add(this.radioButtonRG);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.tb_Nome);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.tb_RG_CPF);
+            this.groupBox2.Controls.Add(this.tb_CPF);
             this.groupBox2.Controls.Add(this.dataFim);
             this.groupBox2.Controls.Add(this.dataInicio);
             this.groupBox2.Controls.Add(this.label3);
@@ -192,6 +191,19 @@
             this.groupBox2.Size = new System.Drawing.Size(1197, 113);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(825, 40);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(36, 19);
+            this.materialLabel5.TabIndex = 16;
+            this.materialLabel5.Text = "CPF";
             // 
             // bt_pesquisar
             // 
@@ -205,10 +217,10 @@
             this.bt_pesquisar.Name = "bt_pesquisar";
             this.bt_pesquisar.Primary = true;
             this.bt_pesquisar.Size = new System.Drawing.Size(94, 36);
-            this.bt_pesquisar.TabIndex = 15;
+            this.bt_pesquisar.TabIndex = 4;
             this.bt_pesquisar.Text = "PESQUISAR";
             this.bt_pesquisar.UseVisualStyleBackColor = true;
-            this.bt_pesquisar.Click += new System.EventHandler(this.bt_pesquisar_Click);
+            this.bt_pesquisar.Click += new System.EventHandler(this.Bt_pesquisar_Click);
             // 
             // label2
             // 
@@ -233,10 +245,10 @@
             this.bt_limpar.Name = "bt_limpar";
             this.bt_limpar.Primary = false;
             this.bt_limpar.Size = new System.Drawing.Size(71, 36);
-            this.bt_limpar.TabIndex = 9;
+            this.bt_limpar.TabIndex = 5;
             this.bt_limpar.Text = "LIMPAR";
             this.bt_limpar.UseVisualStyleBackColor = true;
-            this.bt_limpar.Click += new System.EventHandler(this.bt_limpar_Click);
+            this.bt_limpar.Click += new System.EventHandler(this.Bt_limpar_Click);
             // 
             // materialLabel3
             // 
@@ -274,40 +286,6 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "FISIOTERAPEUTA";
             // 
-            // radioButtonCPF
-            // 
-            this.radioButtonCPF.AutoSize = true;
-            this.radioButtonCPF.Depth = 0;
-            this.radioButtonCPF.Font = new System.Drawing.Font("Roboto", 10F);
-            this.radioButtonCPF.Location = new System.Drawing.Point(889, 34);
-            this.radioButtonCPF.Margin = new System.Windows.Forms.Padding(0);
-            this.radioButtonCPF.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioButtonCPF.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioButtonCPF.Name = "radioButtonCPF";
-            this.radioButtonCPF.Ripple = true;
-            this.radioButtonCPF.Size = new System.Drawing.Size(54, 30);
-            this.radioButtonCPF.TabIndex = 12;
-            this.radioButtonCPF.TabStop = true;
-            this.radioButtonCPF.Text = "CPF";
-            this.radioButtonCPF.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonRG
-            // 
-            this.radioButtonRG.AutoSize = true;
-            this.radioButtonRG.Depth = 0;
-            this.radioButtonRG.Font = new System.Drawing.Font("Roboto", 10F);
-            this.radioButtonRG.Location = new System.Drawing.Point(829, 34);
-            this.radioButtonRG.Margin = new System.Windows.Forms.Padding(0);
-            this.radioButtonRG.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.radioButtonRG.MouseState = MaterialSkin.MouseState.HOVER;
-            this.radioButtonRG.Name = "radioButtonRG";
-            this.radioButtonRG.Ripple = true;
-            this.radioButtonRG.Size = new System.Drawing.Size(47, 30);
-            this.radioButtonRG.TabIndex = 11;
-            this.radioButtonRG.TabStop = true;
-            this.radioButtonRG.Text = "RG";
-            this.radioButtonRG.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -331,7 +309,7 @@
             this.tb_Nome.SelectionLength = 0;
             this.tb_Nome.SelectionStart = 0;
             this.tb_Nome.Size = new System.Drawing.Size(325, 23);
-            this.tb_Nome.TabIndex = 10;
+            this.tb_Nome.TabIndex = 2;
             this.tb_Nome.TabStop = false;
             this.tb_Nome.UseSystemPasswordChar = false;
             // 
@@ -346,23 +324,24 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Jéssyka Lucena";
             // 
-            // tb_RG_CPF
+            // tb_CPF
             // 
-            this.tb_RG_CPF.Depth = 0;
-            this.tb_RG_CPF.Hint = "";
-            this.tb_RG_CPF.Location = new System.Drawing.Point(829, 67);
-            this.tb_RG_CPF.MaxLength = 14;
-            this.tb_RG_CPF.MouseState = MaterialSkin.MouseState.HOVER;
-            this.tb_RG_CPF.Name = "tb_RG_CPF";
-            this.tb_RG_CPF.PasswordChar = '\0';
-            this.tb_RG_CPF.SelectedText = "";
-            this.tb_RG_CPF.SelectionLength = 0;
-            this.tb_RG_CPF.SelectionStart = 0;
-            this.tb_RG_CPF.Size = new System.Drawing.Size(150, 23);
-            this.tb_RG_CPF.TabIndex = 9;
-            this.tb_RG_CPF.TabStop = false;
-            this.tb_RG_CPF.UseSystemPasswordChar = false;
-            this.tb_RG_CPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_RG_CPF_KeyPress);
+            this.tb_CPF.Depth = 0;
+            this.tb_CPF.Hint = "";
+            this.tb_CPF.Location = new System.Drawing.Point(829, 67);
+            this.tb_CPF.MaxLength = 14;
+            this.tb_CPF.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tb_CPF.Name = "tb_CPF";
+            this.tb_CPF.PasswordChar = '\0';
+            this.tb_CPF.SelectedText = "";
+            this.tb_CPF.SelectionLength = 0;
+            this.tb_CPF.SelectionStart = 0;
+            this.tb_CPF.Size = new System.Drawing.Size(150, 23);
+            this.tb_CPF.TabIndex = 3;
+            this.tb_CPF.TabStop = false;
+            this.tb_CPF.UseSystemPasswordChar = false;
+            this.tb_CPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_CPF_KeyPress);
+            this.tb_CPF.Leave += new System.EventHandler(this.Txt_CPF_Leave);
             // 
             // dataFim
             // 
@@ -460,7 +439,6 @@
             this.AtendimentoGridDataConsulta,
             this.AtendimentoGridNome,
             this.AtendimentoGridCPF,
-            this.AtendimentoGridRG,
             this.AtendimentoGridTelefone,
             this.AtendimentoGridDataNascimento,
             this.AtendimentoGridTratamnto,
@@ -502,14 +480,7 @@
             this.AtendimentoGridCPF.Tag = "";
             this.AtendimentoGridCPF.Text = "CPF";
             this.AtendimentoGridCPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.AtendimentoGridCPF.Width = 125;
-            // 
-            // AtendimentoGridRG
-            // 
-            this.AtendimentoGridRG.Tag = "";
-            this.AtendimentoGridRG.Text = "RG";
-            this.AtendimentoGridRG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.AtendimentoGridRG.Width = 100;
+            this.AtendimentoGridCPF.Width = 150;
             // 
             // AtendimentoGridTelefone
             // 
@@ -574,7 +545,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // BottomToolStripPanel
             // 
@@ -653,7 +624,7 @@
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1223, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Atendimento";
@@ -664,7 +635,7 @@
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1223, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pacientes";
@@ -718,16 +689,16 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4,
             this.columnHeader5,
+            this.columnHeader4,
             this.columnHeader6,
+            this.CEP,
             this.Logradouro,
             this.Numero,
             this.Complemento,
             this.Estado,
             this.Cidade,
             this.Bairro,
-            this.CEP,
             this.columnsSaldoDebito});
             this.materialListView1.Cursor = System.Windows.Forms.Cursors.Default;
             this.materialListView1.Depth = 0;
@@ -745,93 +716,79 @@
             this.materialListView1.TabIndex = 0;
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.materialListView1.DoubleClick += new System.EventHandler(this.materialListView1_DoubleClick);
             // 
             // columnHeader1
             // 
-            this.columnHeader1.DisplayIndex = 13;
             this.columnHeader1.Width = 0;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.DisplayIndex = 0;
             this.columnHeader2.Text = "Nome";
             this.columnHeader2.Width = 400;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.DisplayIndex = 1;
             this.columnHeader3.Text = "CPF";
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.columnHeader3.Width = 125;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.DisplayIndex = 2;
-            this.columnHeader4.Text = "RG";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.columnHeader4.Width = 100;
+            this.columnHeader3.Width = 150;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.DisplayIndex = 3;
             this.columnHeader5.Text = "Telefone";
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnHeader5.Width = 150;
             // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Sexo";
+            this.columnHeader4.Width = 100;
+            // 
             // columnHeader6
             // 
-            this.columnHeader6.DisplayIndex = 4;
             this.columnHeader6.Text = "Data de nascimento";
             this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnHeader6.Width = 160;
             // 
+            // CEP
+            // 
+            this.CEP.Text = "CEP";
+            this.CEP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CEP.Width = 100;
+            // 
             // Logradouro
             // 
-            this.Logradouro.DisplayIndex = 5;
             this.Logradouro.Text = "Logradouro";
             this.Logradouro.Width = 300;
             // 
             // Numero
             // 
-            this.Numero.DisplayIndex = 6;
             this.Numero.Text = "Número";
             this.Numero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Numero.Width = 100;
             // 
             // Complemento
             // 
-            this.Complemento.DisplayIndex = 7;
             this.Complemento.Text = "Complemento";
             this.Complemento.Width = 250;
             // 
             // Estado
             // 
-            this.Estado.DisplayIndex = 8;
             this.Estado.Text = "Estado";
             this.Estado.Width = 80;
             // 
             // Cidade
             // 
-            this.Cidade.DisplayIndex = 9;
             this.Cidade.Text = "Cidade";
             this.Cidade.Width = 100;
             // 
             // Bairro
             // 
-            this.Bairro.DisplayIndex = 10;
             this.Bairro.Text = "Bairro";
             this.Bairro.Width = 100;
             // 
-            // CEP
-            // 
-            this.CEP.DisplayIndex = 11;
-            this.CEP.Text = "CEP";
-            this.CEP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CEP.Width = 100;
-            // 
             // columnsSaldoDebito
             // 
-            this.columnsSaldoDebito.DisplayIndex = 12;
             this.columnsSaldoDebito.Text = "Saldo/Debito";
             this.columnsSaldoDebito.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.columnsSaldoDebito.Width = 150;
@@ -849,14 +806,49 @@
             // 
             // panel23
             // 
+            this.panel23.Controls.Add(this.materialLabel6);
+            this.panel23.Controls.Add(this.txtCPF_Paciente_Search);
             this.panel23.Controls.Add(this.materialLabel1);
-            this.panel23.Controls.Add(this.txt_Search);
+            this.panel23.Controls.Add(this.txt_Nome_Paciente_Search);
             this.panel23.Controls.Add(this.bt_Cadastro_Paciente);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(0, 0);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(1197, 57);
             this.panel23.TabIndex = 4;
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(235, 6);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel6.TabIndex = 8;
+            this.materialLabel6.Text = "CPF:";
+            // 
+            // txtCPF_Paciente_Search
+            // 
+            this.txtCPF_Paciente_Search.Depth = 0;
+            this.txtCPF_Paciente_Search.Hint = "";
+            this.txtCPF_Paciente_Search.Location = new System.Drawing.Point(239, 28);
+            this.txtCPF_Paciente_Search.MaxLength = 32767;
+            this.txtCPF_Paciente_Search.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCPF_Paciente_Search.Name = "txtCPF_Paciente_Search";
+            this.txtCPF_Paciente_Search.PasswordChar = '\0';
+            this.txtCPF_Paciente_Search.SelectedText = "";
+            this.txtCPF_Paciente_Search.SelectionLength = 0;
+            this.txtCPF_Paciente_Search.SelectionStart = 0;
+            this.txtCPF_Paciente_Search.Size = new System.Drawing.Size(180, 23);
+            this.txtCPF_Paciente_Search.TabIndex = 1;
+            this.txtCPF_Paciente_Search.TabStop = false;
+            this.txtCPF_Paciente_Search.UseSystemPasswordChar = false;
+            this.txtCPF_Paciente_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtCPF_Paciente_Search_KeyDown);
+            this.txtCPF_Paciente_Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCPF_Paciente_KeyPress);
+            this.txtCPF_Paciente_Search.Leave += new System.EventHandler(this.TxtCPF_Paciente_Leave);
             // 
             // materialLabel1
             // 
@@ -867,27 +859,27 @@
             this.materialLabel1.Location = new System.Drawing.Point(-4, 6);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(71, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(54, 19);
             this.materialLabel1.TabIndex = 5;
-            this.materialLabel1.Text = "Paciente:";
+            this.materialLabel1.Text = "Nome:";
             // 
-            // txt_Search
+            // txt_Nome_Paciente_Search
             // 
-            this.txt_Search.Depth = 0;
-            this.txt_Search.Hint = "";
-            this.txt_Search.Location = new System.Drawing.Point(0, 28);
-            this.txt_Search.MaxLength = 32767;
-            this.txt_Search.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txt_Search.Name = "txt_Search";
-            this.txt_Search.PasswordChar = '\0';
-            this.txt_Search.SelectedText = "";
-            this.txt_Search.SelectionLength = 0;
-            this.txt_Search.SelectionStart = 0;
-            this.txt_Search.Size = new System.Drawing.Size(223, 23);
-            this.txt_Search.TabIndex = 4;
-            this.txt_Search.TabStop = false;
-            this.txt_Search.UseSystemPasswordChar = false;
-            this.txt_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Search_KeyDown);
+            this.txt_Nome_Paciente_Search.Depth = 0;
+            this.txt_Nome_Paciente_Search.Hint = "";
+            this.txt_Nome_Paciente_Search.Location = new System.Drawing.Point(0, 28);
+            this.txt_Nome_Paciente_Search.MaxLength = 32767;
+            this.txt_Nome_Paciente_Search.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txt_Nome_Paciente_Search.Name = "txt_Nome_Paciente_Search";
+            this.txt_Nome_Paciente_Search.PasswordChar = '\0';
+            this.txt_Nome_Paciente_Search.SelectedText = "";
+            this.txt_Nome_Paciente_Search.SelectionLength = 0;
+            this.txt_Nome_Paciente_Search.SelectionStart = 0;
+            this.txt_Nome_Paciente_Search.Size = new System.Drawing.Size(223, 23);
+            this.txt_Nome_Paciente_Search.TabIndex = 0;
+            this.txt_Nome_Paciente_Search.TabStop = false;
+            this.txt_Nome_Paciente_Search.UseSystemPasswordChar = false;
+            this.txt_Nome_Paciente_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Txt_Nome_Paciente_Search_KeyDown);
             // 
             // bt_Cadastro_Paciente
             // 
@@ -904,7 +896,7 @@
             this.bt_Cadastro_Paciente.TabIndex = 6;
             this.bt_Cadastro_Paciente.Text = "CADASTRAR";
             this.bt_Cadastro_Paciente.UseVisualStyleBackColor = true;
-            this.bt_Cadastro_Paciente.Click += new System.EventHandler(this.bt_Cadastrar_Paciente_Click);
+            this.bt_Cadastro_Paciente.Click += new System.EventHandler(this.Bt_Cadastrar_Paciente_Click);
             // 
             // panel26
             // 
@@ -998,10 +990,11 @@
             this.bt_Sobre.Name = "bt_Sobre";
             this.bt_Sobre.Primary = true;
             this.bt_Sobre.Size = new System.Drawing.Size(64, 36);
-            this.bt_Sobre.TabIndex = 2;
+            this.bt_Sobre.TabIndex = 0;
+            this.bt_Sobre.TabStop = false;
             this.bt_Sobre.Text = "SOBRE";
             this.bt_Sobre.UseVisualStyleBackColor = true;
-            this.bt_Sobre.Click += new System.EventHandler(this.bt_Sobre_Click);
+            this.bt_Sobre.Click += new System.EventHandler(this.Bt_Sobre_Click);
             // 
             // materialTabSelector1
             // 
@@ -1091,7 +1084,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader Logradouro;
@@ -1104,17 +1096,15 @@
         private System.Windows.Forms.ColumnHeader columnsSaldoDebito;
         private System.Windows.Forms.Panel panel25;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txt_Search;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txt_Nome_Paciente_Search;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.GroupBox groupBox2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialRadioButton radioButtonCPF;
-        private MaterialSkin.Controls.MaterialRadioButton radioButtonRG;
         private MaterialSkin.Controls.MaterialSingleLineTextField tb_Nome;
-        private MaterialSkin.Controls.MaterialSingleLineTextField tb_RG_CPF;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tb_CPF;
         private System.Windows.Forms.DateTimePicker dataFim;
         private System.Windows.Forms.DateTimePicker dataInicio;
         private System.Windows.Forms.Label label3;
@@ -1124,7 +1114,6 @@
         private MaterialSkin.Controls.MaterialListView gridAtendimento;
         private System.Windows.Forms.ColumnHeader columnHeader0;
         private System.Windows.Forms.ColumnHeader AtendimentoGridNome;
-        private System.Windows.Forms.ColumnHeader AtendimentoGridRG;
         private System.Windows.Forms.ColumnHeader AtendimentoGridCPF;
         private System.Windows.Forms.ColumnHeader AtendimentoGridTelefone;
         private System.Windows.Forms.ColumnHeader AtendimentoGridDataNascimento;
@@ -1141,6 +1130,10 @@
         private System.Windows.Forms.Panel panel12;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel lb_date_time;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCPF_Paciente_Search;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
     }
 }
 

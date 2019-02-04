@@ -32,6 +32,12 @@ namespace Consultorio.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ConsultarCEP", ReplyAction="http://tempuri.org/IService1/ConsultarCEPResponse")]
         System.Threading.Tasks.Task<Biblioteca.ClassesBasicas.CEP> ConsultarCEPAsync(string CEP);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InserirPaciente", ReplyAction="http://tempuri.org/IService1/InserirPacienteResponse")]
+        void InserirPaciente(Biblioteca.ClassesBasicas.Paciente pFiltro);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InserirPaciente", ReplyAction="http://tempuri.org/IService1/InserirPacienteResponse")]
+        System.Threading.Tasks.Task InserirPacienteAsync(Biblioteca.ClassesBasicas.Paciente pFiltro);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -83,6 +89,14 @@ namespace Consultorio.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Biblioteca.ClassesBasicas.CEP> ConsultarCEPAsync(string CEP) {
             return base.Channel.ConsultarCEPAsync(CEP);
+        }
+        
+        public void InserirPaciente(Biblioteca.ClassesBasicas.Paciente pFiltro) {
+            base.Channel.InserirPaciente(pFiltro);
+        }
+        
+        public System.Threading.Tasks.Task InserirPacienteAsync(Biblioteca.ClassesBasicas.Paciente pFiltro) {
+            return base.Channel.InserirPacienteAsync(pFiltro);
         }
     }
 }

@@ -20,6 +20,9 @@ namespace ServidorPetSpa
         [OperationContract]
         CEP ConsultarCEP(string CEP);
 
+        [OperationContract]
+        void InserirPaciente(Paciente pFiltro);
+
         // TODO: Add your service operations here
     }
 

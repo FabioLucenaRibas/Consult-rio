@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca.Negocio;
+using System;
 
 namespace Biblioteca.ClassesBasicas
 {
@@ -6,7 +7,6 @@ namespace Biblioteca.ClassesBasicas
     {
 
         private long cpf;
-        private long rg;
         private String nome;
         private DateTime date;
         private String estado;
@@ -17,17 +17,12 @@ namespace Biblioteca.ClassesBasicas
         private long numero;
         private String bairro;
         private long cep;
+        private Sexo sexo;
 
         public long Cpf
         {
             get { return cpf; }
             set { cpf = value; }
-        }
-
-        public long Rg
-        {
-            get { return rg; }
-            set { rg = value; }
         }
 
         public String Nome
@@ -90,5 +85,10 @@ namespace Biblioteca.ClassesBasicas
             set { cep = value; }
         }
 
+        public Sexo Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
     }
 }

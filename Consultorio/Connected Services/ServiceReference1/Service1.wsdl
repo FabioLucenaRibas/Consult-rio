@@ -25,6 +25,12 @@
   <wsdl:message name="IService1_ConsultarCEP_OutputMessage">
     <wsdl:part name="parameters" element="tns:ConsultarCEPResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_InserirPaciente_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirPaciente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirPaciente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirPacienteResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="Consultar">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Consultar" message="tns:IService1_Consultar_InputMessage" />
@@ -37,6 +43,10 @@
     <wsdl:operation name="ConsultarCEP">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarCEP" message="tns:IService1_ConsultarCEP_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarCEPResponse" message="tns:IService1_ConsultarCEP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirPaciente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirPaciente" message="tns:IService1_InserirPaciente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirPacienteResponse" message="tns:IService1_InserirPaciente_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -61,6 +71,15 @@
     </wsdl:operation>
     <wsdl:operation name="ConsultarCEP">
       <soap:operation soapAction="http://tempuri.org/IService1/ConsultarCEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirPaciente">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirPaciente" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
