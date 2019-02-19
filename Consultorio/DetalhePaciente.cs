@@ -49,5 +49,10 @@ namespace Consultorio
                 Txt_Numero.Text = "";
             }
         }
+
+        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

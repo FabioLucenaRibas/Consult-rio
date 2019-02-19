@@ -68,8 +68,11 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +120,8 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.panel12);
+            this.panel5.Controls.Add(this.panel11);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(13, 13);
             this.panel5.Name = "panel5";
@@ -625,6 +630,22 @@
             this.panel10.Size = new System.Drawing.Size(933, 10);
             this.panel10.TabIndex = 0;
             // 
+            // panel11
+            // 
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel11.Location = new System.Drawing.Point(0, 359);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(913, 65);
+            this.panel11.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(913, 85);
+            this.panel12.TabIndex = 1;
+            // 
             // DetalhePaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -638,6 +659,7 @@
             this.Text = "Detalhamento do paciente";
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -686,5 +708,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel11;
     }
 }
